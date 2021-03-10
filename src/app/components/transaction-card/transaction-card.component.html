@@ -1,0 +1,16 @@
+<!-- <div class="col-12"> -->
+<div class="table-responsive">
+    <table class="table xtable">
+        <tbody>
+            <tr>
+                <td width="25%">{{ transaction.dates.valueDate }}</td>
+                <td width="25%"><img class="card-img-top img-fluid" [src]="transaction.img" [alt]="transaction.name"></td>
+                <td width="40%">
+                    <b>{{ transaction.merchant.name }}</b> <br/> {{ transaction.transaction.type }}
+                </td>
+                <td width="10%"><b>{{ transaction.transaction.amountCurrency.amount }}</b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- </div> -->

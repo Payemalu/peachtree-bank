@@ -1,0 +1,11 @@
+img {
+    height: 42px;
+    width: 42px;
+}
+
+table {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

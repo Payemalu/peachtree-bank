@@ -1,0 +1,71 @@
+<div class="container">
+    <main>
+
+        <div class="row g-3">
+            <div class="col-md-4 col-lg-3 card-body">
+                <img src="./../../../assets/img/icons/arrows.png">
+                <h4 class="justify-content-between align-items-center mb-3 card-header">
+                    <!-- <span class="badge bg-secondary rounded-pill">3</span> -->
+                    Make a Transfer
+                </h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">From Account</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text" style="display: none;">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">To Account</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary card-button">SUBMIT</button>
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-7 order-md-last card-body">
+                <img src="./../../../assets/img/icons/briefcase.png">
+                <div class="card-header">
+                    <h4 class="mb-3">Recent Transantions</h4>
+                </div>
+                <p>&nbsp;</p>
+                <!-- <form class="needs-validation" novalidate> -->
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="firstName" placeholder="Search by typing..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="btn-group col-sm-6 btn-wscroll" role="group" aria-label="Button group with nested dropdown">
+                        <div style="padding: 10px;">
+                            <label for="exampleInputEmail1" class="form-label ">Sort by</label>
+                        </div>
+                        <div class="btn-group " role="group ">
+                            <button id="btnGroupDrop1 " type="button " class="btn btn-dba dropdown-toggle " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                                DATE
+                            </button>
+                            <div class="dropdown-menu " aria-labelledby="btnGroupDrop1 ">
+                                <a class="dropdown-item " href="# ">Dropdown link</a>
+                                <a class="dropdown-item " href="# ">Dropdown link</a>
+                            </div>
+                        </div>
+                        <button type="button " class="btn btn-dba ">BENEFICIARY</button>
+                        <button type="button " class="btn btn-dba ">AMOUNT</button>
+                    </div>
+                </div>
+
+                <p>&nbsp;</p>
+
+                <div class="col-12" style="border: solid 2px #cccccc;">
+                    <app-transaction-card (selectedTransaction)="verTransaction( $event )" [transaction]="foo" [index]="i" *ngFor="let foo of transactions; let i = index"></app-transaction-card>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</div>

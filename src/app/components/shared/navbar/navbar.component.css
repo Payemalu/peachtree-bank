@@ -1,0 +1,7 @@
+.navbar-style {
+    background-color: #fff !important;
+    border-bottom: 3px solid #eb6321;
+    border-top: 1px solid #eb6321;
+    height: 90px;
+    z-index: 300;
+}
